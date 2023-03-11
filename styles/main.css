@@ -1,0 +1,16 @@
+.wrapper {
+  position: relative;
+  border: 1px solid black;
+  width: 1500px;
+  height: 700px;
+}
+
+img {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+}
+
+/* .activ{
+  background-color: bisque;
+} */
