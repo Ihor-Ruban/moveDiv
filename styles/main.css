@@ -2,14 +2,28 @@
   position: relative;
   border: 1px solid black;
   width: 1500px;
-  height: 700px;
+  height: 600px;
 }
 
-img {
+img{
+  position: absolute;
+  top: 45%;
+  left: 44%;
+  width: 120px;
+  height: 120px;
+  transition: all 2s ease-in-out;
+}
+
+/* 
+#cat:hover .catDog {
+  transform: translate(125px, -125px);
+} */
+
+/* img {
   position: absolute;
   width: 120px;
   height: 120px;
-}
+} */
 
 /* .activ{
   background-color: bisque;

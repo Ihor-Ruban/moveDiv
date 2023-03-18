@@ -1,19 +1,30 @@
-// let theSquare = document.getElementById('square')
+// let randomImg = { dog1: 1, dog2: 2, dog3: 3, cat1: 4, cat2: 5, cat3: 6 }
+
 let catDog = document.querySelector('.catDog')
 
-catDog.addEventListener('click', () => {
-  let x = Math.floor(Math.random() * 500) + 1
-  let y = Math.floor(Math.random() * 500) + 1
+catDog.addEventListener('click', (e) => {
+  let rect = e.target.getBoundingClientRect()
+  let x = e.clientX - rect.left
+  let y = e.clientY - rect.top
+  console.log('Left: ' + x + ' Top: ' + y)
 
-  catDog.style.left = x + 'px'
-  catDog.style.top = y + 'px'
-
+  if (x <= 60 && y <= 60) {
+    console.log('привет')
+    return
+  }
+  if (x >= 60 && y >= 60) {
+    console.log('пока')
+    return
+  }
+  if (x <= 60 && y >= 60) {
+    console.log('ну')
+    return
+  }
+  if (x >= 60 && y <= 60) {
+    console.log('ну')
+    return
+  }
 })
-
-
-
-
-// let randomImg = { dog1: 1, dog2: 2, dog3: 3, cat1: 4, cat2: 5, cat3: 6 }
 
 // for (let key in randomImg) {
 //   let img = document.createElement('img')
